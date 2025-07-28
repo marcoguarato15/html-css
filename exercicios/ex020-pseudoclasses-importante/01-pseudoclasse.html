@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        /*
+            PSEUDO-CLASSES SERVEM PARA ALTERAR O ESTADO DE UM ELEMENTO
+
+            #   = id
+            .   = classe
+            >   = filho (elemento filho)
+            :   = pseudo-classe (estado)
+            ::  = pseudo-elemento (conteúdo) 
+        */
+        div {
+            background-color: rgb(153, 153, 153);
+            border: 1px black solid;
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+            text-align: center;
+        }
+
+        div:hover {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div>01</div>
+    <div>02</div>
+    <div>03</div>
+    <div>04</div>
+    <div>05</div>
+    <div>06</div>
+</body>
+</html>

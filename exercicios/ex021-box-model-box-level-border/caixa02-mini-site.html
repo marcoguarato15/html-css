@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;   
+        }
+        body {
+            background-color: aliceblue;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: justify;
+        }
+
+        section {
+            background-color: white;
+            border-radius: 5px;
+            padding: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.527);
+            margin: 10px;
+        }
+
+        nav {
+            width: fit-content;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.534);
+        }
+
+        header {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: rgb(124, 169, 64);
+            box-sizing: border-box;
+        }
+
+        header > h1 {
+
+            width: 100%;
+            text-align: center;
+            border-bottom: 1px solid black;
+        }
+        
+        #menu {
+            width: fit-content;
+            display: block;
+            font-size: 20px;
+            text-align: top;
+        }
+
+        #menu:hover .menu-item{
+            display: block;
+        }
+
+        .menu-item {
+            padding: 5px;
+            width: 100px;
+            display: none;
+        }
+
+        .menu-item:hover {
+            background-color: rgb(194, 250, 82);
+            display: block;
+        }
+
+        .menu-item:hover .menu-sub-list{
+            display: block;
+        }
+
+        .menu-sub-list {
+            margin-left: 20px;
+            list-style: none;
+            display: none;
+        }
+
+        .menu-sub-item:hover {
+            background-color: aliceblue;
+        }
+
+        section {
+            margin-top: 5px;
+        }
+
+        h2 {
+            padding: 15px
+        }
+
+        h3 {
+            padding: 15px;
+        }
+
+        article {
+            margin-top: 5px;
+            border-top: 1px solid black;
+        }
+        aside {
+            background-color: rgb(197, 197, 197);
+            margin-top: 5px;
+            text-align: right;
+        }
+
+        footer {
+            position: sticky;
+            bottom: 0;
+            text-align: center;
+            color: white;
+            background-color: rgb(44, 34, 34);
+            padding: 15px;
+        }
+
+        p{
+            text-indent: 16px;
+        }
+
+    </style>
+</head>
+<body>
+<!-- Ainda utilizado porem há outras -->
+    <!-- display block -->
+    <div></div>
+    <!-- dipsplay inline block !! Ainda utilizado !!-->
+    <span></span>
+<!--                                 -->
+    <header>
+        <!-- tudo de cabeçalhos (menus, etc...)-->
+        <h1>UFTM</h1>
+        <nav><!-- Menu -->
+            <ul id="menu">⇉
+                <li class="menu-item" >Link1</li>
+                <li class="menu-item" >Link2</li>
+                <li class="menu-item" >Link3
+                    <ul class="menu-sub-list">
+                        <li class="menu-sub-item">Sublink1</li>
+                        <li class="menu-sub-item">Sublink2</li>
+                        <li class="menu-sub-item">Sublink3</li>
+                        <li class="menu-sub-item">Sublink4</li>
+                    </ul>
+                </li>
+                <li class="menu-item" style="font-size: 0.7em;"><span style="background-color: black; color:white;">LINK4</span> sem position absolute... ainda falta conhecimento</li>
+            </ul>
+           
+        </nav>
+    </header>
+    <main> <!-- Antigo div corpo -->
+
+        <section>
+            <h2 style="text-align: center;">Aqui é o título principal da seção</h2>
+            <p> Este é um texto de descritivo de exemplo: Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eos perferendis facere quasi et adipisci ex incidunt.</p>
+            <article>
+                <h3>Subtítulo 1 da seção</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime quas neque fugiat iste obcaecati. Reiciendis quas consequuntur ratione possimus ipsa quam rerum veniam odit quisquam. Voluptatibus voluptatem libero architecto facilis. Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <p> Non numquam, beatae minus fuga sit, dolor, ab possimus obcaecati autem odio quibusdam error aspernatur debitis illo repellendus voluptatem saepe deserunt temporibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic illum quam dolorem! Incidunt reiciendis odio quis rem unde illo veritatis porro quam quas deserunt, ratione inventore cum aliquid architecto maxime.</p>
+                <aside>
+                    <!-- Citações (nomes de autores, etc...)-->
+                    -- Lorem ipsum.
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Marco Antonio Guarato Alves</p>
+    </footer>
+</body>
+</html>
