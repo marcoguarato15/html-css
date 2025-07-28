@@ -173,6 +173,7 @@ a.externo::after{
 }
 
 .video {
+    margin-bottom: 15px;
     background-color: var(--cor5);
     padding: 15px;
     padding-bottom: 41%;
