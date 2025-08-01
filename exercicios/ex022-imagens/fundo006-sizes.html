@@ -3,26 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste de Imagem de Fundo</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body {
             height: 100vh;
+           /*
+                Parametros
+           
             background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
-            background-repeat: no-repeat;
             background-position: center top;
+            background-repeat: no-repeat;
             background-size: cover; 
-            /*
+            background-attachment: fixed;
+
+            
                 Valores de background-size
 
             - auto(default);
             - contain(fica com barras laterais/superior,inferior);
             - cover (engloba o tamanho todo sem distorcer a imagem como em 100% 100%)
+
+                Shorthand
+
+            -> color > image > position > repeat > size (problema) > attachment
             */
+
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed;
+            background-size: cover;
         }
 
         main {
-            width: 500px;
+            max-width: 600px;
             border: 1px solid darkblue;
             margin: auto;
             background-color: white;
@@ -34,6 +46,15 @@
 <body>
     <main>
         <h1>Teste de Imagem</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio laboriosam in quo, facere dolorem minima debitis incidunt, maxime, a magni commodi. Fugit rerum cumque numquam beatae delectus enim fuga id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio similique consequatur reprehenderit molestiae error labore sit tempora sapiente. Obcaecati similique quidem nam facilis totam esse, placeat dicta cum expedita. Similique! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem earum fugit reiciendis. Molestias aspernatur iusto sit! Qui perspiciatis, dolorem enim doloremque quaerat aspernatur, laboriosam facere ea ducimus autem voluptate esse.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio laboriosam in quo, facere dolorem minima debitis incidunt, maxime, a magni commodi. Fugit rerum cumque numquam beatae delectus enim fuga id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio similique consequatur reprehenderit molestiae error labore sit tempora sapiente. Obcaecati similique quidem nam facilis totam esse, placeat dicta cum expedita. Similique! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem earum fugit reiciendis. Molestias aspernatur iusto sit! Qui perspiciatis, dolorem enim doloremque quaerat aspernatur, laboriosam facere ea ducimus autem voluptate esse.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio laboriosam in quo, facere dolorem minima debitis incidunt, maxime, a magni commodi. Fugit rerum cumque numquam beatae delectus enim fuga id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio similique consequatur reprehenderit molestiae error labore sit tempora sapiente. Obcaecati similique quidem nam facilis totam esse, placeat dicta cum expedita. Similique! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem earum fugit reiciendis. Molestias aspernatur iusto sit! Qui perspiciatis, dolorem enim doloremque quaerat aspernatur, laboriosam facere ea ducimus autem voluptate esse.
+        </p>
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio laboriosam in quo, facere dolorem minima debitis incidunt, maxime, a magni commodi. Fugit rerum cumque numquam beatae delectus enim fuga id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio similique consequatur reprehenderit molestiae error labore sit tempora sapiente. Obcaecati similique quidem nam facilis totam esse, placeat dicta cum expedita. Similique! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem earum fugit reiciendis. Molestias aspernatur iusto sit! Qui perspiciatis, dolorem enim doloremque quaerat aspernatur, laboriosam facere ea ducimus autem voluptate esse.
         </p>
