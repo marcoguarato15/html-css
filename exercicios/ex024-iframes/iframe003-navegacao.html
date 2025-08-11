@@ -12,6 +12,12 @@
         iframe#tela {
             width: 95vw;
             border: 2px solid black;
+            height: 500px;
+        }
+        /*não funciona*/
+        #img-iframe {
+            height: 200px;
+            width: 150px;
         }
     </style>
 </head>
@@ -27,7 +33,9 @@
 
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident modi molestias, possimus tenetur quis sed sunt voluptatem fugit, hic dolores ratione architecto, itaque fuga consequuntur veritatis nostrum ducimus at minima. Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
 
-    <iframe id="tela" name="frame" src="">
+    <iframe id="tela" name="frame" srcdoc="<h1>Escolha ula das opções acima</h1> <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, maiores! Enim, error quasi? Neque fugit earum fugiat nisi magni minima ex nihil labore, libero, illo voluptas doloribus ipsa consectetur. Ut!</p> <img id='img-iframe' style='height:250px'; width:150px;' src='imagens/cev-portrait.jpg'>">
+
+        
         <p>Infelizmente seu navegador não é compatível</p>
     </iframe>
 
