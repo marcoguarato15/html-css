@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form action="cadastro.php" method="post">
+
+        <fieldset>
+            <legend>Cor favorita</legend>
+            <p>
+                <label for="icor">Cor: </label>
+                <input type="color" name="cor" id="icor">
+            </p>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Satisfação</legend>
+            <p>
+                <label for="isatis">Nível de satisfação</label>
+                <input type="range" name="satis" id="isatis" min="0" max="5" value="4">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Foto</legend>
+            <label for="ifoto">Foto de Perfil</label>
+            <!-- DEVE ser do metodo POST para envio de arquivos -->
+             <input type="file" name="foto" id="ifoto">
+        </fieldset>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+    
+</body>
+</html>
