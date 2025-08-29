@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .container {
+            border: 2px solid blue;
+            display: grid;
+
+            grid-template-columns: auto auto auto;
+            grid-template-rows: 100px 50px 100px;
+            gap: 20px;
+            align-items: stretch;
+            justify-items:  center;
+            align-content: center;
+            justify-content: stretch;
+        }
+
+        .item {
+            border: 2px solid red;
+            padding: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">f</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
