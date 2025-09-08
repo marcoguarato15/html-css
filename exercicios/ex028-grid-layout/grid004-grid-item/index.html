@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Item</title>
+    <style>
+        .container {
+            display: grid;
+
+            grid-template: repeat(3, auto) / repeat(4, 1fr);
+            gap: 10px;
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .caixa1 {
+            border: 1px solid red;
+            padding: 5px;
+
+            grid-row-start: 1;
+            grid-row-end: 2;
+
+            grid-column-start: 1;
+            grid-column-end: -1;
+        }
+
+        .caixa2 {
+            border: 1px solid blue;
+            padding: 5px;
+
+            grid-row-start: 2;
+            grid-row-end: 3;
+
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        .caixa3 {
+            border: 1px solid green;
+            padding: 5px;
+
+            grid-row-start: 2;
+            grid-row-end: 0;
+
+            grid-column-start: 3;
+            grid-column-end: 5;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <main class="container">
+        <section class="caixa1">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel alias iusto deserunt, velit saepe repellat totam molestias necessitatibus, voluptate enim est earum atque beatae corrupti. Obcaecati at repudiandae id assumenda!</p>
+        </section>
+        <section class="caixa2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem minus quibusdam quasi, eum quae cum nostrum sapiente quas modi quisquam, unde, facere quam dolorum praesentium eaque consequatur laudantium ullam nulla!</p>
+        </section>
+        <section class="caixa3">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem minus quibusdam quasi, eum quae cum nostrum sapiente quas modi quisquam, unde, facere quam dolorum praesentium eaque consequatur laudantium ullam nulla!</p>
+        </section>
+    </main>
+</body>
+</html>
